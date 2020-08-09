@@ -1,0 +1,11 @@
+border-width: 3px;
+
+border-style: solid;
+
+border-image: linear-gradient(#402000, #805020, #fff, #d0a060) 1; // bronze
+
+border-image: linear-gradient(#404950, #b7c9d0, #fff, #506068) 1; // silver
+
+border-image: linear-gradient(#c09040, #f0e080, #fff, #e09000) 1; // gold
+
+border-image: linear-gradient(#203030, #50a0b0, #fff, #70d0a7, #006060) 1; // platinum
