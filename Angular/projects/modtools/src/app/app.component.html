@@ -1,0 +1,10 @@
+<mat-toolbar color="primary">
+    <span>{{title}}</span>
+</mat-toolbar>
+<mat-tab-group>
+    <mat-tab label="Event Generator">
+        <ng-template matTabContent>
+            <app-event-generator class="mat-tab-app"></app-event-generator>
+        </ng-template>
+    </mat-tab>
+</mat-tab-group>

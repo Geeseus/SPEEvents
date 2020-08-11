@@ -1,0 +1,44 @@
+<div>
+    <mat-form-field appearance="outline">
+        <mat-label>Type</mat-label>
+        <mat-select [(ngModel)]="event.type" (selectionChange)="onEventTypeChanged($event.source.value)">
+            <mat-option *ngFor="let et of eventTypes" [value]="et">{{et}}</mat-option>
+        </mat-select>
+    </mat-form-field><br>
+    <mat-form-field appearance="outline">
+        <mat-label>Title</mat-label>
+        <input matInput [(ngModel)]="event.title">
+    </mat-form-field><br>
+    <mat-form-field appearance="outline">
+        <mat-label>Description</mat-label>
+        <textarea matInput [(ngModel)]="event.descr"></textarea>
+    </mat-form-field><br>
+    <mat-form-field appearance="outline">
+        <mat-label>Tag</mat-label>
+        <input matInput [(ngModel)]="event.tag" [disabled]="event.type == 'Slapfight'">
+    </mat-form-field><br>
+    <mat-form-field appearance="outline">
+        <mat-label>Teams (comma-separated)</mat-label>
+        <input matInput (change)="onTeamsChanged($event.target.value)" [disabled]="event.type != 'Slapfight'">
+    </mat-form-field><br>
+    <mat-form-field appearance="outline">
+        <mat-label>Posting Phase</mat-label>
+        <mat-date-range-input [rangePicker]="postpicker">
+            <input matStartDate [(ngModel)]="event.poststart" placeholder="Start date">
+            <input matEndDate [(ngModel)]="event.postend" placeholder="End date">
+        </mat-date-range-input>
+        <mat-datepicker-toggle matSuffix [for]="postpicker"></mat-datepicker-toggle>
+        <mat-date-range-picker #postpicker></mat-date-range-picker>
+    </mat-form-field><br>
+    <mat-form-field appearance="outline">
+        <mat-label>Voting Phase</mat-label>
+        <mat-date-range-input [rangePicker]="votepicker">
+            <input matStartDate [(ngModel)]="event.votestart" placeholder="Start date">
+            <input matEndDate [(ngModel)]="event.voteend" placeholder="End date">
+        </mat-date-range-input>
+        <mat-datepicker-toggle matSuffix [for]="votepicker"></mat-datepicker-toggle>
+        <mat-date-range-picker #votepicker></mat-date-range-picker>
+    </mat-form-field>
+</div>
+<pre>{{event | json}}</pre>
+<p>Current Date/Time (UTC): {{time.toUTCString()}}</p>
