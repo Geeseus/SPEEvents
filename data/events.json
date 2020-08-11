@@ -37,10 +37,10 @@
     "participants": [],
     "poststart": "2020-07-31T00:00:00.000Z",
     "postend": "2020-08-11T00:00:00.000Z",
-    "votestart": "2020-08-11T00:00:00.000Z",
+    "votestart": "2020-07-31T00:00:00.000Z",
     "voteend": "2020-08-14T00:00:00.000Z",
     "lastupdate": "2020-08-10T05:38:09.000Z",
-    "stage": 0,
+    "stage": 1,
     "winner": null
   }
 ]
