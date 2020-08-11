@@ -1,1 +1,46 @@
-[]
+[
+  {
+    "type": "Slapfight",
+    "title": "Hair Color Slapfight",
+    "descr": "The first slapfight features the 3 most common lord hair colors: Red, Green and Blue.",
+    "tag": null,
+    "teams": [
+      {
+        "name": "Red",
+        "points": 55
+      },
+      {
+        "name": "Green",
+        "points": 64
+      },
+      {
+        "name": "Blue",
+        "points": 43
+      },
+      {
+        "name": "White",
+        "points": 21
+      },
+      {
+        "name": "Purple",
+        "points": 21
+      },
+      {
+        "name": "Pink",
+        "points": 9
+      },
+      {
+        "name": "Yellow",
+        "points": 5
+      }
+    ],
+    "participants": [],
+    "poststart": "2020-07-31T00:00:00.000Z",
+    "postend": "2020-08-11T00:00:00.000Z",
+    "votestart": "2020-08-11T00:00:00.000Z",
+    "voteend": "2020-08-14T00:00:00.000Z",
+    "lastupdate": "2020-08-10T05:38:09.000Z",
+    "stage": 0,
+    "winner": null
+  }
+]
