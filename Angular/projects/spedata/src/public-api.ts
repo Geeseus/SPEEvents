@@ -4,6 +4,7 @@
 
 export * from './lib/spedata.module';
 
+export * from './lib/event-archive.service';
 export * from './lib/event-data.service';
 export * from './lib/user-data.service';
 

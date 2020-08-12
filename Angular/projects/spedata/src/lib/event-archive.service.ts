@@ -8,9 +8,9 @@ import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'any'
 })
-export class EventDataService {
+export class EventArchiveService {
   constructor(
-    @Inject('EVENT_DATA_URL') private dataUrl: string,
+    @Inject('EVENT_ARCHIVE_URL') private dataUrl: string,
     private http: HttpClient) { }
 
   getEvents(): Observable<EventData[]> {
