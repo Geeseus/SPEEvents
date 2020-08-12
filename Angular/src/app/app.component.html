@@ -1,0 +1,15 @@
+<mat-toolbar color="primary">
+    <span>{{title}}</span>
+</mat-toolbar>
+<mat-tab-group>
+    <mat-tab label="Current Events">
+        <ng-template matTabContent>
+            <app-eventlist class="mat-tab-app"></app-eventlist>
+        </ng-template>
+    </mat-tab>
+    <mat-tab label="User Leaderboards">
+        <ng-template matTabContent>
+            <app-userlist class="mat-tab-app"></app-userlist>
+        </ng-template>
+    </mat-tab>
+</mat-tab-group>
