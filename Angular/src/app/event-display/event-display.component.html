@@ -3,12 +3,30 @@
         <mat-panel-title color="primary">{{event.title}}</mat-panel-title>
         <mat-panel-description>{{event.type}} ({{event.poststart | date}})</mat-panel-description>
     </mat-expansion-panel-header>
-    <p>{{event.descr}}</p>
-    <p><b>Posting phase:</b> {{event.poststart | date : 'short'}} - {{event.postend | date : 'short'}}</p>
-    <p><b>Voting phase:</b> {{event.votestart | date : 'short'}} - {{event.voteend | date : 'short'}}</p>
-    <p [hidden]="event.type == 'Slapfight'"><b>Tag:</b> {{event.tag}}</p>
-    <p [hidden]="event.type == 'Slapfight'"><a mat-raised-button href="https://www.reddit.com/r/shitpostemblem/submit?title={{event.tag}}" target="_blank">Submit Post</a></p>
-    <table mat-table [dataSource]="teamDataSource" class="teamtbl" matSort matSortActive="points" matSortDirection="desc" [hidden]="event.type != 'Slapfight'">
+    <p [hidden]="event.winner == null">The winner of this event is <b>{{event.winner}}</b>. Congratulations!</p>
+    <p class="eventdescr">{{event.descr}}</p>
+    <table>
+        <tr>
+            <td><b>Posting phase:</b></td>
+            <td>{{event.poststart | date : 'short'}}</td>
+            <td>-</td>
+            <td>{{event.postend | date : 'short'}}</td>
+            <td><mat-icon [class.green]="postingPhase" [class.red]="!postingPhase">{{postingPhase ? "check_circle" : "cancel"}}</mat-icon></td>
+        </tr>
+        <tr>
+            <td><b>Voting phase:</b></td>
+            <td>{{event.votestart | date : 'short'}}</td>
+            <td>-</td>
+            <td>{{event.voteend | date : 'short'}}</td>
+            <td><mat-icon [class.green]="votingPhase" [class.red]="!votingPhase">{{votingPhase ? "check_circle" : "cancel"}}</mat-icon></td>
+        </tr>
+        <tr [hidden]="event.tag == null">
+            <td><b>Tag:</b></td>
+            <td>{{event.tag}}</td>
+        </tr>
+    </table>
+    <p [hidden]="event.tag == null"><a mat-raised-button href="https://www.reddit.com/r/shitpostemblem/submit?title={{event.tag}}" target="_blank" [disabled]="!postingPhase">Submit Post</a></p>
+    <table mat-table [dataSource]="teamDataSource" class="teamtbl" matSort matSortActive="points" matSortDirection="desc" [hidden]="event.teams.length == 0">
         <ng-container matColumnDef="name">
             <th mat-header-cell *matHeaderCellDef mat-sort-header>Team</th>
             <td mat-cell *matCellDef="let team">{{team.name}}</td>
@@ -19,12 +37,13 @@
         </ng-container>
         <ng-container matColumnDef="actions">
             <th mat-header-cell *matHeaderCellDef>Actions</th>
-            <td mat-cell *matCellDef="let team"><a mat-raised-button href="https://www.reddit.com/r/shitpostemblem/submit?title=%5B{{team.name}}%5D" target="_blank">Submit Post</a></td>
+            <td mat-cell *matCellDef="let team">
+                <a mat-raised-button href="https://www.reddit.com/r/shitpostemblem/submit?title=%5B{{team.name}}%5D" target="_blank" [disabled]="!postingPhase">Submit Post</a>
+            </td>
         </ng-container>
     
         <tr mat-header-row *matHeaderRowDef="teamColumns"></tr>
         <tr mat-row *matRowDef="let row; columns: teamColumns;"></tr>
     </table>
-    <p [hidden]="event.type == 'Weekly Themes' || event.winner == null"><b>Winner:</b> {{event.winner}}</p>
     <p>Last update: {{event.lastupdate | date : 'short'}}</p>
 </mat-expansion-panel>

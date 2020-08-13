@@ -32,9 +32,7 @@ export class EventGeneratorComponent implements OnInit {
   ngOnInit(): void {
     this.eventTypes = Object.values(EventType);
 
-    setInterval(() => {
-      this.time = new Date();
-   }, 1000);
+    setInterval(() => this.time = new Date(), 1000);
   }
 
   onEventTypeChanged (type: EventType): void {
