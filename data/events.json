@@ -1,6 +1,34 @@
 [
   {
     "type": "Slapfight",
+    "title": "Boomers vs. Zoomers (feat. Tiki gang)",
+    "descr": "Since it received the highest amount of votes in our recent poll, a duel between the zoomers and boomers among the characters of the Fire Emblem universe is the topic of the second slapfight. To make things worse, a bunch of dragon people who are allegedly way older than they look entered the fray.",
+    "tag": null,
+    "teams": [
+      {
+        "name": "Boomers",
+        "points": 0
+      },
+      {
+        "name": "Zoomers",
+        "points": 0
+      },
+      {
+        "name": "Tikis",
+        "points": 0
+      }
+    ],
+    "participants": [],
+    "poststart": "2020-08-14T00:00:00.000Z",
+    "postend": "2020-08-25T00:00:00.000Z",
+    "votestart": "2020-08-14T00:00:00.000Z",
+    "voteend": "2020-08-28T00:00:00.000Z",
+    "lastupdate": null,
+    "stage": 0,
+    "winner": null
+  },
+  {
+    "type": "Slapfight",
     "title": "Hair Color Slapfight",
     "descr": "The first slapfight features the 3 most common lord hair colors: Red, Green and Blue.",
     "tag": null,
