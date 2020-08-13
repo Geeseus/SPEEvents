@@ -12,4 +12,74 @@
             <app-userlist class="mat-tab-app"></app-userlist>
         </ng-template>
     </mat-tab>
+    <mat-tab label="FAQ">
+        <ng-template matTabContent>
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                    <mat-panel-title><b>What types of events does the subreddit host?</b></mat-panel-title>
+                    <mat-panel-description></mat-panel-description>
+                </mat-expansion-panel-header>
+                <p><b>Contests:</b> Subreddit contests where the best submission wins. The winner is usually determined through a poll
+                    and receives a custom subreddit name (old Reddit) and user flair.</p>
+                <p><b>Weekly Themes:</b> Weekly events where a set of topics or subreddit formats are provided.
+                    Submissions need to be related to at least one of these topics (no contest/winner).</p>
+                <p><b>Slapfights:</b> Biweekly events where 2 or more teams battle for victory. Join a team and create content to
+                    propagate it. The team with the highest amount of points wins and is rewarded with a new corresponding user flair.</p>
+                <p><b>SPECember:</b> Yearly event hosted in December with daily shitposting topics. Participate on each day to receive special rewards.</p>
+            </mat-expansion-panel>
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                    <mat-panel-title><b>How can I participate in a subreddit event?</b></mat-panel-title>
+                    <mat-panel-description></mat-panel-description>
+                </mat-expansion-panel-header>
+                Press the corresponding "Submit Post" button on the "Current Events" page to create a new event post.
+                Make sure that the right tag (usually "[WT]" for weekly themes, "[Contest]" for contests and "[Team]" for slapfights)
+                is included in the post title so it can be recognized by the event bot.
+            </mat-expansion-panel>
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                    <mat-panel-title><b>How do I earn points for myself and my (slapfight) team?</b></mat-panel-title>
+                    <mat-panel-description></mat-panel-description>
+                </mat-expansion-panel-header>
+                If your post includes the correct event tag in its title and is at least 3 days old, the event bot is going to assign
+                points to your post (and your team) automatically. Please note that you can only earn points if the post has been posted
+                within the event's posting phase. Please contact the moderators if you didn't receive any points for your post, so they
+                can be assigned manually.
+            </mat-expansion-panel>
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                    <mat-panel-title><b>How many points do I get for my posts?</b></mat-panel-title>
+                    <mat-panel-description></mat-panel-description>
+                </mat-expansion-panel-header>
+                The amount of points per post depends on the number of upvotes:
+                <table cellspacing="10">
+                    <tr>
+                        <th>Upvotes</th>
+                        <th>Points</th>
+                    </tr>
+                    <tr>
+                        <td>10+</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>50+</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>100+</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>250+</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>500+</td>
+                        <td>5</td>
+                    </tr>
+                </table>
+                You can't get more than 5 points per post.
+            </mat-expansion-panel>
+        </ng-template>
+    </mat-tab>
 </mat-tab-group>

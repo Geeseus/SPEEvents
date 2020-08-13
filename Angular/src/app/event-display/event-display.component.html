@@ -1,6 +1,6 @@
-<mat-expansion-panel [expanded]="true">
+<mat-expansion-panel [expanded]="postingPhase || votingPhase">
     <mat-expansion-panel-header>
-        <mat-panel-title color="primary">{{event.title}}</mat-panel-title>
+        <mat-panel-title>{{event.title}}</mat-panel-title>
         <mat-panel-description>{{event.type}} ({{event.poststart | date}})</mat-panel-description>
     </mat-expansion-panel-header>
     <p [hidden]="event.winner == null">The winner of this event is <b>{{event.winner}}</b>. Congratulations!</p>
