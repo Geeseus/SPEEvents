@@ -27,7 +27,8 @@ export class EventDisplayComponent implements OnInit {
     this.event.postend = new Date(this.event.postend);
     this.event.votestart = new Date(this.event.votestart);
     this.event.voteend = new Date(this.event.voteend);
-    this.event.lastupdate = new Date(this.event.lastupdate);
+    if (this.event.lastupdate != null)
+      this.event.lastupdate = new Date(this.event.lastupdate);
     this.teamDataSource = new MatTableDataSource(this.event.teams);
     this.teamDataSource.sort = this.teamSort;
     this.time = new Date();

@@ -45,5 +45,5 @@
         <tr mat-header-row *matHeaderRowDef="teamColumns"></tr>
         <tr mat-row *matRowDef="let row; columns: teamColumns;"></tr>
     </table>
-    <p>Last update: {{event.lastupdate | date : 'short'}}</p>
+    <p [hidden]="event.lastupdate == null">Last update: {{event.lastupdate | date : 'short'}}</p>
 </mat-expansion-panel>
