@@ -1,6 +1,30 @@
 [
   {
     "type": "Slapfight",
+    "title": "Archers vs. Mages",
+    "descr": "Even though Boomers vs. Zoomers won the poll, we didn't forget about those who voted for Archers vs. Mages. This slapfight will start one week after and partially overlap with the boomers vs. zoomers event.\n\nMay the better ranged units win!\n\nNote: The archers team includes mounted archers and ballistas.",
+    "tag": null,
+    "teams": [
+      {
+        "name": "Archers",
+        "points": 0
+      },
+      {
+        "name": "Mages",
+        "points": 0
+      }
+    ],
+    "participants": [],
+    "poststart": "2020-08-21T00:00:00.000Z",
+    "postend": "2020-09-01T00:00:00.000Z",
+    "votestart": "2020-08-21T00:00:00.000Z",
+    "voteend": "2020-09-04T00:00:00.000Z",
+    "lastupdate": null,
+    "stage": 0,
+    "winner": null
+  },
+  {
+    "type": "Slapfight",
     "title": "Boomers vs. Zoomers (feat. Tiki gang)",
     "descr": "Since it received the highest amount of votes in our recent poll, a duel between the zoomers and boomers among the characters of the Fire Emblem universe is the topic of the second slapfight. To make things worse, a bunch of dragon people who are allegedly way older than they look entered the fray.",
     "tag": null,
