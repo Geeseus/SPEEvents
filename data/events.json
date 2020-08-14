@@ -47,8 +47,8 @@
     "postend": "2020-08-25T00:00:00.000Z",
     "votestart": "2020-08-14T00:00:00.000Z",
     "voteend": "2020-08-28T00:00:00.000Z",
-    "lastupdate": null,
-    "stage": 0,
+    "lastupdate": "2020-08-14T00:06:18.876735Z",
+    "stage": 1,
     "winner": null
   },
   {
@@ -91,8 +91,8 @@
     "postend": "2020-08-11T00:00:00.000Z",
     "votestart": "2020-07-31T00:00:00.000Z",
     "voteend": "2020-08-14T00:00:00.000Z",
-    "lastupdate": "2020-08-13T23:49:09.026960Z",
-    "stage": 1,
-    "winner": null
+    "lastupdate": "2020-08-14T00:06:18.876735Z",
+    "stage": 2,
+    "winner": "Green"
   }
 ]
