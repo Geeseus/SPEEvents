@@ -32,10 +32,7 @@ def addpoints(submission, userpoints, teampoints = None, team = None):
         else:
             msg = 'Thank you for your submission! You earned **' + str(points) + '** point(s).\n\n[Current Events and Leaderboards](http://events.shitpostemblem.xyz)'
         
-        # submission.reply(msg)
-        print(submission.title)
-        print(datetime.utcfromtimestamp(submission.created_utc))
-        print(msg)
+        submission.reply(msg)
 
 def generatewtannouncement(event, tPoststart, tPostend):
     a  = '# ' + event['title'] + '\n\n'
@@ -50,7 +47,7 @@ def generateslapfightannouncement(event, tPoststart, tPostend):
     a += 'A new slapfight event has started!\n\n'
     a += event['descr'].replace('\n', '\n\n') + '\n\n'
     a += '**Posting Phase** (UTC): ' + str(tPoststart) + ' - ' + str(tPostend) + '\n\n'
-    a += '**Teams**: ' + ', '.join(map(lambda team: team['name'], event['teams']))
+    a += '**Teams**: ' + ', '.join(map(lambda team: '[' + team['name'] + '](https://www.reddit.com/r/shitpostemblem/submit?title=%5B' + team['name'] + '%5D)', event['teams']))
     return a
 
 def generateslapfightwinannouncement(event, teampoints):
@@ -224,6 +221,15 @@ for event in events:
             if tNow > tVoteend:
                 event['stage'] = 3
                 # TODO: Announce winner
+
+if (len(announcements) > 0):
+    msg = "Hello! I'm u/SPEBot and this is an automatically generated post."
+    for a in announcements:
+        msg += '\n\n' + a
+    msg += '\n\n---\n\n[Current Events and Leaderboards](http://events.shitpostemblem.xyz)'
+    title = 'Event Announcements (' + tNow.strftime('%b-%d-%Y') + ')'
+    submission = spe.submit(title, msg)
+    submission.mod.sticky()
 
 with open('./data/events.json', 'w') as fevents:
     json.dump(events, fevents, indent=2)
