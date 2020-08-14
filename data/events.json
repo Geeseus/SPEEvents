@@ -59,15 +59,15 @@
     "teams": [
       {
         "name": "Red",
-        "points": 70
+        "points": 74
       },
       {
         "name": "Green",
-        "points": 82
+        "points": 83
       },
       {
         "name": "Blue",
-        "points": 58
+        "points": 64
       },
       {
         "name": "White",
@@ -75,7 +75,7 @@
       },
       {
         "name": "Purple",
-        "points": 24
+        "points": 27
       },
       {
         "name": "Pink",
@@ -91,7 +91,7 @@
     "postend": "2020-08-11T00:00:00.000Z",
     "votestart": "2020-07-31T00:00:00.000Z",
     "voteend": "2020-08-14T00:00:00.000Z",
-    "lastupdate": "2020-08-13T02:23:03.399100Z",
+    "lastupdate": "2020-08-13T23:49:09.026960Z",
     "stage": 1,
     "winner": null
   }
