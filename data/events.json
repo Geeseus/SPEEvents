@@ -31,15 +31,15 @@
     "teams": [
       {
         "name": "Boomers",
-        "points": 0
+        "points": 17
       },
       {
         "name": "Zoomers",
-        "points": 0
+        "points": 14
       },
       {
         "name": "Tikis",
-        "points": 0
+        "points": 4
       }
     ],
     "participants": [],
@@ -47,7 +47,7 @@
     "postend": "2020-08-25T00:00:00.000Z",
     "votestart": "2020-08-14T00:00:00.000Z",
     "voteend": "2020-08-28T00:00:00.000Z",
-    "lastupdate": "2020-08-14T00:06:18.876735Z",
+    "lastupdate": "2020-08-18T16:06:22.328894Z",
     "stage": 1,
     "winner": null
   },
