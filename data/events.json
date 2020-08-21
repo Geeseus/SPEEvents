@@ -19,8 +19,8 @@
     "postend": "2020-09-01T00:00:00.000Z",
     "votestart": "2020-08-21T00:00:00.000Z",
     "voteend": "2020-09-04T00:00:00.000Z",
-    "lastupdate": null,
-    "stage": 0,
+    "lastupdate": "2020-08-21T03:12:36.509733Z",
+    "stage": 1,
     "winner": null
   },
   {
@@ -35,11 +35,11 @@
       },
       {
         "name": "Zoomers",
-        "points": 14
+        "points": 16
       },
       {
         "name": "Tikis",
-        "points": 11
+        "points": 16
       }
     ],
     "participants": [],
@@ -47,7 +47,7 @@
     "postend": "2020-08-25T00:00:00.000Z",
     "votestart": "2020-08-14T00:00:00.000Z",
     "voteend": "2020-08-28T00:00:00.000Z",
-    "lastupdate": "2020-08-20T04:23:35.668401Z",
+    "lastupdate": "2020-08-21T03:12:36.509733Z",
     "stage": 1,
     "winner": null
   },
