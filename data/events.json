@@ -7,11 +7,11 @@
     "teams": [
       {
         "name": "Archers",
-        "points": 3
+        "points": 30
       },
       {
         "name": "Mages",
-        "points": 0
+        "points": 22
       }
     ],
     "participants": [],
@@ -19,7 +19,7 @@
     "postend": "2020-09-01T00:00:00.000Z",
     "votestart": "2020-08-21T00:00:00.000Z",
     "voteend": "2020-09-04T00:00:00.000Z",
-    "lastupdate": "2020-08-24T07:44:11.695438Z",
+    "lastupdate": "2020-08-27T07:56:43.347774Z",
     "stage": 1,
     "winner": null
   },
@@ -35,11 +35,11 @@
       },
       {
         "name": "Zoomers",
-        "points": 20
+        "points": 25
       },
       {
         "name": "Tikis",
-        "points": 35
+        "points": 37
       }
     ],
     "participants": [],
@@ -47,7 +47,7 @@
     "postend": "2020-08-25T00:00:00.000Z",
     "votestart": "2020-08-14T00:00:00.000Z",
     "voteend": "2020-08-28T00:00:00.000Z",
-    "lastupdate": "2020-08-24T07:44:11.695438Z",
+    "lastupdate": "2020-08-27T07:56:43.347774Z",
     "stage": 1,
     "winner": null
   },
