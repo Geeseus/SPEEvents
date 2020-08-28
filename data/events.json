@@ -11,7 +11,7 @@
       },
       {
         "name": "Mages",
-        "points": 22
+        "points": 27
       }
     ],
     "participants": [],
@@ -19,7 +19,7 @@
     "postend": "2020-09-01T00:00:00.000Z",
     "votestart": "2020-08-21T00:00:00.000Z",
     "voteend": "2020-09-04T00:00:00.000Z",
-    "lastupdate": "2020-08-27T07:56:43.347774Z",
+    "lastupdate": "2020-08-28T05:41:04.568262Z",
     "stage": 1,
     "winner": null
   },
@@ -47,9 +47,9 @@
     "postend": "2020-08-25T00:00:00.000Z",
     "votestart": "2020-08-14T00:00:00.000Z",
     "voteend": "2020-08-28T00:00:00.000Z",
-    "lastupdate": "2020-08-27T07:56:43.347774Z",
-    "stage": 1,
-    "winner": null
+    "lastupdate": "2020-08-28T05:41:04.568262Z",
+    "stage": 2,
+    "winner": "Tikis"
   },
   {
     "type": "Slapfight",
