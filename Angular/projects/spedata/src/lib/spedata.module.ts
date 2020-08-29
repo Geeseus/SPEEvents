@@ -10,11 +10,11 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [ HttpClientModule ],
   exports: [],
   providers: [
-    { provide: 'EVENT_ARCHIVE_URL', useValue: 'http://events.shitpostemblem.xyz/data/archive.json' },
+    { provide: 'EVENT_ARCHIVE_URL', useValue: 'https://events.shitpostemblem.xyz/data/archive.json' },
     EventArchiveService,
-    { provide: 'EVENT_DATA_URL', useValue: 'http://events.shitpostemblem.xyz/data/events.json' },
+    { provide: 'EVENT_DATA_URL', useValue: 'https://events.shitpostemblem.xyz/data/events.json' },
     EventDataService,
-    { provide: 'USER_DATA_URL', useValue: 'http://events.shitpostemblem.xyz/data/users.json' },
+    { provide: 'USER_DATA_URL', useValue: 'https://events.shitpostemblem.xyz/data/users.json' },
     UserDataService]
 })
 export class SPEDataModule { }
