@@ -28,9 +28,9 @@ def addpoints(submission, userpoints, teampoints = None, team = None):
                 teampoints[team] += points
             else:
                 teampoints[team] = points
-            msg = 'Thank you for your submission! You earned **' + str(points) + '** point(s) for your team.\n\n[Current Events and Leaderboards](http://events.shitpostemblem.xyz)'
+            msg = 'Thank you for your submission! You earned **' + str(points) + '** point(s) for your team.\n\n[Current Events and Leaderboards](https://events.shitpostemblem.xyz)'
         else:
-            msg = 'Thank you for your submission! You earned **' + str(points) + '** point(s).\n\n[Current Events and Leaderboards](http://events.shitpostemblem.xyz)'
+            msg = 'Thank you for your submission! You earned **' + str(points) + '** point(s).\n\n[Current Events and Leaderboards](https://events.shitpostemblem.xyz)'
         
         submission.reply(msg)
 
@@ -226,7 +226,7 @@ if (len(announcements) > 0):
     msg = "Hello! I'm u/SPEBot and this is an automatically generated post."
     for a in announcements:
         msg += '\n\n' + a
-    msg += '\n\n---\n\n[Current Events and Leaderboards](http://events.shitpostemblem.xyz)'
+    msg += '\n\n---\n\n[Current Events and Leaderboards](https://events.shitpostemblem.xyz)'
     title = 'Event Announcements (' + tNow.strftime('%b-%d-%Y') + ')'
     submission = spe.submit(title, msg)
     submission.mod.sticky()
