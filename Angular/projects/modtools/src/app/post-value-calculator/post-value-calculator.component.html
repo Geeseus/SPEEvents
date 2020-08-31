@@ -30,8 +30,19 @@
     <mat-checkbox [(ngModel)]="title_bonus">Post has a good/fitting title.</mat-checkbox><br>
     <mat-checkbox [(ngModel)]="event_bonus">Post is an event post.</mat-checkbox><br>
 </div>
-<p>Effort value: {{ effort_value() }}</p>
-<p>Post value: {{ post_value() }} / {{ threshold }}</p>
+<br>
+<table>
+    <tr>
+        <td><b>Effort value:</b></td>
+        <td>{{ effort_value() }}</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><b>Post value:</b></td>
+        <td>{{ post_value() }} / {{ threshold }}</td>
+        <td><mat-icon [class.green]="pass()" [class.red]="!pass()">{{pass() ? "check_circle" : "cancel"}}</mat-icon></td>
+    </tr>
+</table>
 <pre>
 Post value breakdown:
 
@@ -43,5 +54,5 @@ Post value breakdown:
 * other bonuses: {{ bonus_total() }}
 * originality factor: {{ originality_factor }}
 
-Total post value: {{ post_value() }} / {{ threshold }}
+Total post value: {{ post_value() }} / {{ threshold }} {{ pass() ? "✔" : "✖" }}
 </pre>

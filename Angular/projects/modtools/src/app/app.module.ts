@@ -9,6 +9,7 @@ import { MatButtonModule } from "@angular/material/button";
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatDatepickerModule } from "@angular/material/datepicker";
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { MatMomentDateModule, MAT_MOMENT_DATE_ADAPTER_OPTIONS } from "@angular/material-moment-adapter";
 import { MatSelectModule } from '@angular/material/select';
@@ -30,6 +31,7 @@ import { PostValueCalculatorComponent } from './post-value-calculator/post-value
     MatCheckboxModule,
     MatDatepickerModule,
     MatFormFieldModule,
+    MatIconModule,
     MatInputModule,
     MatMomentDateModule,
     MatSelectModule,

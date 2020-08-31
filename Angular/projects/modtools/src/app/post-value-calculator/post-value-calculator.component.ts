@@ -51,4 +51,8 @@ export class PostValueCalculatorComponent implements OnInit {
     return this.effort_value() * this.originality_factor;
   }
 
+  pass(): boolean {
+    return this.post_value() >= this.threshold;
+  }
+
 }

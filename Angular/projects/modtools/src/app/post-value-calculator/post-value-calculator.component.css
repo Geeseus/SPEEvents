@@ -2,3 +2,9 @@
     width: 100%;
     max-width: 35em;
 }
+.green {
+    color: green;
+}
+.red {
+    color: red;
+}
