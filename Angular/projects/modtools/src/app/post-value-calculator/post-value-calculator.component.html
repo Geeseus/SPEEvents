@@ -1,0 +1,47 @@
+<div>
+    <mat-form-field appearance="outline">
+        <mat-label>Picks</mat-label>
+        <input matInput [(ngModel)]="picks" type="number" min="0">
+    </mat-form-field><br>
+    <mat-form-field appearance="outline">
+        <mat-label>Modifications</mat-label>
+        <input matInput [(ngModel)]="modifications" type="number" min="0">
+    </mat-form-field><br>
+    <mat-form-field appearance="outline">
+        <mat-label>Combinations</mat-label>
+        <input matInput [(ngModel)]="combinations" type="number" min="0">
+    </mat-form-field><br>
+    <mat-form-field appearance="outline">
+        <mat-label>Number of characters in OC text</mat-label>
+        <input matInput [(ngModel)]="text_chars" type="number" min="0">
+    </mat-form-field><br>
+    <mat-form-field appearance="outline">
+        <mat-label>Total value of other creations</mat-label>
+        <input matInput [(ngModel)]="creation_total" type="number" min="0">
+    </mat-form-field><br>
+    <mat-form-field appearance="outline">
+        <mat-label>Total value of advanced modifications</mat-label>
+        <input matInput [(ngModel)]="modification_total" type="number" min="0">
+    </mat-form-field><br>
+    <mat-form-field appearance="outline">
+        <mat-label>Originality factor</mat-label>
+        <input matInput [(ngModel)]="originality_factor" type="number" min="0.1" step="0.1">
+    </mat-form-field><br>
+    <mat-checkbox [(ngModel)]="title_bonus">Post has a good/fitting title.</mat-checkbox><br>
+    <mat-checkbox [(ngModel)]="event_bonus">Post is an event post.</mat-checkbox><br>
+</div>
+<p>Effort value: {{ effort_value() }}</p>
+<p>Post value: {{ post_value() }} / {{ threshold }}</p>
+<pre>
+Post value breakdown:
+
+* # of picks: {{ picks }}
+* # of modifications: {{ modifications }}
+* # of characters in OC text: {{ text_chars }} (value: {{ text_chars * text_character_value }})
+* # of combinations: {{ combinations }}
+* value of other creations / advanced modifications: {{ creation_total + modification_total }}
+* other bonuses: {{ bonus_total() }}
+* originality factor: {{ originality_factor }}
+
+Total post value: {{ post_value() }} / {{ threshold }}
+</pre>
