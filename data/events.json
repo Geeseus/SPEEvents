@@ -7,7 +7,7 @@
     "teams": [
       {
         "name": "Archers",
-        "points": 30
+        "points": 33
       },
       {
         "name": "Mages",
@@ -19,7 +19,7 @@
     "postend": "2020-09-01T00:00:00.000Z",
     "votestart": "2020-08-21T00:00:00.000Z",
     "voteend": "2020-09-04T00:00:00.000Z",
-    "lastupdate": "2020-08-29T05:28:43.133228Z",
+    "lastupdate": "2020-08-31T17:39:34.195610Z",
     "stage": 1,
     "winner": null
   },
