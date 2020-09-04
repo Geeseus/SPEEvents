@@ -1,5 +1,20 @@
 [
   {
+    "type": "Weekly Themes",
+    "title": "Weekly Themes (Sept 4)",
+    "descr": "Characters: Matthis (Fe1/Fe3/Fe11/Fe12), Orsin (Fe5)\nTheme: Motivational posters\nCrossover: Marvel movies",
+    "tag": "[WT]",
+    "teams": [],
+    "participants": [],
+    "poststart": "2020-09-04T00:00:00.000Z",
+    "postend": "2020-09-11T00:00:00.000Z",
+    "votestart": "2020-09-04T00:00:00.000Z",
+    "voteend": "2020-09-14T00:00:00.000Z",
+    "lastupdate": "2020-09-04T09:24:45.501221Z",
+    "stage": 1,
+    "winner": null
+  },
+  {
     "type": "Slapfight",
     "title": "Archers vs. Mages",
     "descr": "Even though Boomers vs. Zoomers won the poll, we didn't forget about those who voted for Archers vs. Mages. This slapfight will start one week after and partially overlap with the boomers vs. zoomers event.\n\nMay the better ranged units win!\n\nNote: The archers team includes mounted archers and ballistas.",
@@ -19,9 +34,9 @@
     "postend": "2020-09-01T00:00:00.000Z",
     "votestart": "2020-08-21T00:00:00.000Z",
     "voteend": "2020-09-04T00:00:00.000Z",
-    "lastupdate": "2020-08-31T17:39:34.195610Z",
-    "stage": 1,
-    "winner": null
+    "lastupdate": "2020-09-04T09:24:45.501221Z",
+    "stage": 2,
+    "winner": "Archers"
   },
   {
     "type": "Slapfight",
