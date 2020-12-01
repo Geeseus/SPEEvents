@@ -27,9 +27,9 @@ if (cDay <= 25):
         msg = "Hello! 🤖.\n\n"
         msg += '# SPEcember Day ' + str(cDay) + '\n\n'
         msg += 'Today\'s theme/topic: **' + decDay['theme'] + '**\n\n'
-        msg += 'To participate, include the phrase **SPEcember Day ' + str(cDay) + '** in the title of your post (so it can be recognized/detected by the bot)\n\n'
+        msg += 'To participate, include the phrase **SPEcember Day ' + str(cDay) + '** in the title of your post (so it can be recognized/detected by the bot). You can check your participation here: https://www.reddit.com/r/shitpostemblem/wiki/specember_2020\n\n'
         msg += '\n\n---\n\n[General Info](https://www.reddit.com/r/shitpostemblem/comments/jq45k7/specember_2020_info/)\n\n[SPE Discord Server](http://discord.shitpostemblem.xyz)'
-        title = 'SPEcember Day ' + str(cDay)
+        title = 'SPEcember 2020 - Day ' + str(cDay) + ' (Megathread)'
         megathread = spe.submit(title, msg)
         megathread.mod.sticky()
         decDay['megathread'] = megathread.id
@@ -61,9 +61,6 @@ for submission in spe.new(limit=100):
                     'submission': submission.permalink
                 })
                 
-                msg = 'Thank you, your submission has been counted!'
-                submission.reply(msg)
-                
                 if (decDay['megathread'] != ''):
                     megathread = reddit.submission(id=decDay['megathread'])
                     megathread.reply('[' + submission.title + '](' + submission.permalink + ') by u/' + submission.author.name)
@@ -78,3 +75,27 @@ with open('./data/dec2020.json', 'w') as fevents:
     json.dump(events, fevents, indent=2)
 
 # TODO: Commit new json file
+
+table = {}
+for i in range(1, 26):
+    for p in decDays[i]['participants']:
+        author = p['name']
+        if (not (author in table)):
+            table[author] = [False] * 26
+        table[author][i] = True
+
+lbs = '#SPEcember 2020 Participation Table'
+lbs += '\n\n| **User**'
+for i in range(1, 26):
+    lbs += ' | **' + str(i) + '**'
+lbs += ' |\n|-|'
+for i in range(1, 26):
+    lbs += '-|'
+
+for user, points in sorted(table.items(), key = lambda item: item[0]):
+    lbs += '\n|u/' + user
+    for i in range(1, 26):
+        lbs += '|' + ('\u2713' if table[author][i] else ' ')
+    lbs += '|'
+
+spe.wiki['specember_2020'].edit(lbs)
