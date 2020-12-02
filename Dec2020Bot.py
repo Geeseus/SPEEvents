@@ -27,7 +27,7 @@ if (cDay <= 25):
         msg = "Hello! 🤖.\n\n"
         msg += '# SPEcember Day ' + str(cDay) + '\n\n'
         msg += 'Today\'s theme/topic: **' + decDay['theme'] + '**\n\n'
-        msg += 'To participate, include the phrase **SPEcember Day ' + str(cDay) + '** in the title of your post (so it can be recognized/detected by the bot). You can check your participation here: https://www.reddit.com/r/shitpostemblem/wiki/specember_2020\n\n'
+        msg += 'To participate, include the phrase **SPEcember Day ' + str(cDay) + '** in the title of your post (so it can be recognized/detected by the bot). You can check your progress/participation on https://www.reddit.com/r/shitpostemblem/wiki/specember_2020\n\n'
         msg += '\n\n---\n\n[General Info](https://www.reddit.com/r/shitpostemblem/comments/jq45k7/specember_2020_info/)\n\n[SPE Discord Server](http://discord.shitpostemblem.xyz)'
         title = 'SPEcember 2020 - Day ' + str(cDay) + ' (Megathread)'
         megathread = spe.submit(title, msg)
@@ -92,10 +92,10 @@ lbs += ' |\n|-|'
 for i in range(1, 26):
     lbs += '-|'
 
-for user, points in sorted(table.items(), key = lambda item: item[0]):
+for user, pcp in sorted(table.items(), key = lambda item: item[0]):
     lbs += '\n|u/' + user
     for i in range(1, 26):
-        lbs += '|' + ('\u2713' if table[author][i] else ' ')
+        lbs += '|' + ('\u2713' if pcp[i] else ' ')
     lbs += '|'
 
 spe.wiki['specember_2020'].edit(lbs)
