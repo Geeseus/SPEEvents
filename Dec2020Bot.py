@@ -44,9 +44,9 @@ for submission in spe.new(limit=100):
     if (ts < t0):
         break
     
-    title = submission.title.lower().replace(']', ' ').replace(')', ' ').replace('-', ' ')
+    title = submission.title.lower().replace(']', ' ').replace(')', ' ').replace('-', ' ').replace(':', ' ').replace(',', ' ').replace('specember 2020', 'specember')
     idx0 = title.find('specember day ')
-    if (idx0 >= 0):
+    if (idx0 >= 0 and submission.author.name != 'SPEBot'):
         idx0 += 14
         idx1 = title.find(' ', idx0)
         if (idx1 < 0):
@@ -92,7 +92,7 @@ lbs += ' |\n|-|'
 for i in range(1, 26):
     lbs += '-|'
 
-for user, pcp in sorted(table.items(), key = lambda item: item[0]):
+for user, pcp in sorted(table.items(), key = lambda item: item[0].lower()):
     lbs += '\n|u/' + user
     for i in range(1, 26):
         lbs += '|' + ('\u2713' if pcp[i] else ' ')
