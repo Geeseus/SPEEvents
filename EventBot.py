@@ -226,7 +226,7 @@ if (len(announcements) > 0):
     msg = "Hello! I'm u/SPEBot and this is an automatically generated post."
     for a in announcements:
         msg += '\n\n' + a
-    msg += '\n\n---\n\n[Current Events and Leaderboards](https://events.shitpostemblem.xyz)'
+    msg += '\n\n---\n\n[Current Events and Leaderboards](https://events.shitpostemblem.xyz)\n\n[SPE Discord Server](http://discord.shitpostemblem.xyz)'
     title = 'Event Announcements (' + tNow.strftime('%b-%d-%Y') + ')'
     submission = spe.submit(title, msg)
     submission.mod.sticky()
