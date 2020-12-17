@@ -24,6 +24,12 @@
     },
     {
       "path": "./projects/spedata/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/advent2020/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/advent2020/tsconfig.spec.json"
     }
 ]
 }
