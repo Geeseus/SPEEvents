@@ -28,6 +28,7 @@ if (cDay <= 25):
         msg += '# SPEcember Day ' + str(cDay) + '\n\n'
         msg += 'Today\'s theme/topic: **' + decDay['theme'] + '**\n\n'
         msg += 'To participate, include the phrase **SPEcember Day ' + str(cDay) + '** in the title of your post (so it can be recognized/detected by the bot). You can check your progress/participation on https://www.reddit.com/r/shitpostemblem/wiki/specember_2020\n\n'
+        msg += 'Please only contact/ping the mods (regarding bot/progression issues) if there are posts that are newer than yours and have been counted (aka the bot has been active after you created it) or it\'s been 24+ hours since you created your post.\n\n'
         msg += '\n\n---\n\n[General Info](https://www.reddit.com/r/shitpostemblem/comments/jq45k7/specember_2020_info/)\n\n[SPE Discord Server](http://discord.shitpostemblem.xyz)'
         title = 'SPEcember 2020 - Day ' + str(cDay) + ' (Megathread)'
         megathread = spe.submit(title, msg)
@@ -44,7 +45,7 @@ for submission in spe.new(limit=100):
     if (ts < t0):
         break
     
-    title = submission.title.lower().replace(']', ' ').replace(')', ' ').replace('-', ' ').replace(':', ' ').replace(',', ' ').replace('specember 2020', 'specember')
+    title = submission.title.lower().replace(']', ' ').replace(')', ' ').replace('-', ' ').replace(':', ' ').replace(',', ' ').replace('.', ' ').replace('specember 2020', 'specember')
     idx0 = title.find('specember day ')
     if (idx0 >= 0 and submission.author.name != 'SPEBot'):
         idx0 += 14
