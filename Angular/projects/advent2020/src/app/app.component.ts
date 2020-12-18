@@ -23,8 +23,8 @@ export class AppComponent {
   ngOnInit() {
     this.router.events.subscribe(e => {
       if (e instanceof ActivationEnd) {
-        console.log(e.snapshot.params);
-        this.user = e.snapshot.params['id'];
+        console.log(e.snapshot.queryParams);
+        this.user = e.snapshot.queryParams['u'];
         this.posts$ = this.http.get<PostData[]>('https://events.shitpostemblem.xyz/data/advent2020/' + this.user + '.json').pipe(
           map(res => res.map(p => new ImageItem({ src: p.url, thumb: p.url })))
         );

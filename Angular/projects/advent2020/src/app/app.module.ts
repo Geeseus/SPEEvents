@@ -8,7 +8,7 @@ import { GalleryModule } from '@ngx-gallery/core';
 
 const routes: Routes = [
   {
-    path: 'u/:id',
+    path: '',
     component: AppComponent
   }
 ]
