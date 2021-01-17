@@ -1,6 +1,36 @@
 [
   {
     "type": "Weekly Themes",
+    "title": "Weekly Themes (January 25)",
+    "descr": "This weekly themes event has been requested by u/DefinitelyNotALoli as a SPEcember reward.\n\nThe weekly themes are:\n-\"Troll logic\" (as in, those old rageposts)\n-Mustafa (FE13)\n-Douglas (FE6)",
+    "tag": "[WT]",
+    "teams": [],
+    "participants": [],
+    "poststart": "2021-01-25T00:00:00.000Z",
+    "postend": "2021-02-01T00:00:00.000Z",
+    "votestart": "2021-01-25T00:00:00.000Z",
+    "voteend": "2021-02-04T00:00:00.000Z",
+    "lastupdate": null,
+    "stage": 0,
+    "winner": null
+  },
+  {
+    "type": "Weekly Themes",
+    "title": "Weekly Themes (January 18)",
+    "descr": "This weekly themes event has been requested by u/Samael_Helel as a SPEcember reward.\n\nThe weekly themes are: Legion, Legion, Legion.",
+    "tag": "[WT]",
+    "teams": [],
+    "participants": [],
+    "poststart": "2021-01-18T00:00:00.000Z",
+    "postend": "2021-01-25T00:00:00.000Z",
+    "votestart": "2021-01-18T00:00:00.000Z",
+    "voteend": "2021-01-28T00:00:00.000Z",
+    "lastupdate": null,
+    "stage": 0,
+    "winner": null
+  },
+  {
+    "type": "Weekly Themes",
     "title": "Weekly Themes (Sept 4)",
     "descr": "Characters: Matthis (Fe1/Fe3/Fe11/Fe12), Orsin (Fe5)\nTheme: Motivational posters\nCrossover: Marvel movies",
     "tag": "[WT]",
