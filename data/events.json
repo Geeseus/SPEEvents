@@ -1,5 +1,96 @@
 [
   {
+    "type": "Slapfight",
+    "title": "Slapfight: the duchies of Grannvale",
+    "descr": "This slapfight has been requested by u/Logans_Login as a SPEcember reward.\n\nVisit https://fireemblemwiki.org/wiki/Grannvale for more information on Grannvale, its duchies and the respective characters.",
+    "tag": null,
+    "teams": [
+      {
+        "name": "Chalphy",
+        "points": 0
+      },
+      {
+        "name": "Yngvi",
+        "points": 0
+      },
+      {
+        "name": "Velthomer",
+        "points": 0
+      },
+      {
+        "name": "Friege",
+        "points": 0
+      },
+      {
+        "name": "Dozel",
+        "points": 0
+      },
+      {
+        "name": "Edda",
+        "points": 0
+      }
+    ],
+    "participants": [],
+    "poststart": "2021-03-04T00:00:00.000Z",
+    "postend": "2021-03-15T00:00:00.000Z",
+    "votestart": "2021-03-04T00:00:00.000Z",
+    "voteend": "2021-03-18T00:00:00.000Z",
+    "lastupdate": null,
+    "stage": 0,
+    "winner": null
+  },
+  {
+    "type": "Weekly Themes",
+    "title": "Weekly Themes (February 22)",
+    "descr": "This weekly theme has been requested by u/ghostrodent as a SPEcember reward.\n\nThe weekly theme is Catria!",
+    "tag": "[WT]",
+    "teams": [],
+    "participants": [],
+    "poststart": "2021-02-22T00:00:00.000Z",
+    "postend": "2021-03-01T00:00:00.000Z",
+    "votestart": "2021-02-22T00:00:00.000Z",
+    "voteend": "2021-03-04T00:00:00.000Z",
+    "lastupdate": null,
+    "stage": 0,
+    "winner": null
+  },
+  {
+    "type": "Slapfight",
+    "title": "Slapfight: GBA Era Galore",
+    "descr": "This slapfight has been requested by u/R_Aqua as a SPEcember reward. Path of Radiance gets a pass because it began development before Sacred Stones.",
+    "tag": null,
+    "teams": [
+      {
+        "name": "Binding Blade",
+        "points": 0
+      },
+      {
+        "name": "Blazing Sword",
+        "points": 0
+      },
+      {
+        "name": "Sacred Stones",
+        "points": 0
+      },
+      {
+        "name": "Romhacks",
+        "points": 0
+      },
+      {
+        "name": "PoR",
+        "points": 0
+      }
+    ],
+    "participants": [],
+    "poststart": "2021-02-11T00:00:00.000Z",
+    "postend": "2021-02-22T00:00:00.000Z",
+    "votestart": "2021-02-11T00:00:00.000Z",
+    "voteend": "2021-02-25T00:00:00.000Z",
+    "lastupdate": null,
+    "stage": 0,
+    "winner": null
+  },
+  {
     "type": "Weekly Themes",
     "title": "Weekly Themes (February 1)",
     "descr": "This weekly themes event has been requested by u/BigGnomeYT as a SPEcember reward.\n\nThe weekly theme is: Danganronpa!",
@@ -40,8 +131,8 @@
     "postend": "2021-01-25T00:00:00.000Z",
     "votestart": "2021-01-18T00:00:00.000Z",
     "voteend": "2021-01-28T00:00:00.000Z",
-    "lastupdate": null,
-    "stage": 0,
+    "lastupdate": "2021-01-21T23:29:12.252607Z",
+    "stage": 1,
     "winner": null
   },
   {
