@@ -1,5 +1,20 @@
 [
   {
+    "type": "Weekly Themes",
+    "title": "Weekly Themes (March 15)",
+    "descr": "This weekly themes event has been requested by u/OwlishNick as a SPEcember reward.\n\nThe weekly themes are:\n-Shining series ( https://en.wikipedia.org/wiki/Shining_(video_game_series) )\n-Boomer memes\n-History memes",
+    "tag": "[WT]",
+    "teams": [],
+    "participants": [],
+    "poststart": "2021-03-15T00:00:00.000Z",
+    "postend": "2021-03-22T00:00:00.000Z",
+    "votestart": "2021-03-15T00:00:00.000Z",
+    "voteend": "2021-03-25T00:00:00.000Z",
+    "lastupdate": null,
+    "stage": 0,
+    "winner": null
+  },
+  {
     "type": "Slapfight",
     "title": "Slapfight: the duchies of Grannvale",
     "descr": "This slapfight has been requested by u/Logans_Login as a SPEcember reward.\n\nVisit https://fireemblemwiki.org/wiki/Grannvale for more information on Grannvale, its duchies and the respective characters.",
@@ -101,7 +116,7 @@
     "postend": "2021-02-08T00:00:00.000Z",
     "votestart": "2021-02-01T00:00:00.000Z",
     "voteend": "2021-02-11T00:00:00.000Z",
-    "lastupdate": "2021-02-01T14:08:24.803370Z",
+    "lastupdate": "2021-02-07T13:57:17.904805Z",
     "stage": 1,
     "winner": null
   },
@@ -116,8 +131,8 @@
     "postend": "2021-02-01T00:00:00.000Z",
     "votestart": "2021-01-25T00:00:00.000Z",
     "voteend": "2021-02-04T00:00:00.000Z",
-    "lastupdate": "2021-02-01T14:08:24.803370Z",
-    "stage": 1,
+    "lastupdate": "2021-02-07T13:57:17.904805Z",
+    "stage": 2,
     "winner": null
   },
   {
