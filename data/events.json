@@ -7,11 +7,11 @@
     "teams": [],
     "participants": [],
     "poststart": "2021-03-15T00:00:00.000Z",
-    "postend": "2021-03-22T00:00:00.000Z",
+    "postend": "2021-03-25T00:00:00.000Z",
     "votestart": "2021-03-15T00:00:00.000Z",
-    "voteend": "2021-03-25T00:00:00.000Z",
-    "lastupdate": null,
-    "stage": 0,
+    "voteend": "2021-03-28T00:00:00.000Z",
+    "lastupdate": "2021-03-31T14:41:21.627895Z",
+    "stage": 2,
     "winner": null
   },
   {
@@ -22,7 +22,7 @@
     "teams": [
       {
         "name": "Chalphy",
-        "points": 0
+        "points": 3
       },
       {
         "name": "Yngvi",
@@ -50,9 +50,9 @@
     "postend": "2021-03-15T00:00:00.000Z",
     "votestart": "2021-03-04T00:00:00.000Z",
     "voteend": "2021-03-18T00:00:00.000Z",
-    "lastupdate": null,
-    "stage": 0,
-    "winner": null
+    "lastupdate": "2021-03-18T18:52:06.624846Z",
+    "stage": 2,
+    "winner": "Chalphy"
   },
   {
     "type": "Weekly Themes",
@@ -65,8 +65,8 @@
     "postend": "2021-03-01T00:00:00.000Z",
     "votestart": "2021-02-22T00:00:00.000Z",
     "voteend": "2021-03-04T00:00:00.000Z",
-    "lastupdate": null,
-    "stage": 0,
+    "lastupdate": "2021-03-05T13:07:06.961661Z",
+    "stage": 2,
     "winner": null
   },
   {
@@ -77,15 +77,15 @@
     "teams": [
       {
         "name": "Binding Blade",
-        "points": 0
+        "points": 24
       },
       {
         "name": "Blazing Sword",
-        "points": 0
+        "points": 17
       },
       {
         "name": "Sacred Stones",
-        "points": 0
+        "points": 22
       },
       {
         "name": "Romhacks",
@@ -93,7 +93,7 @@
       },
       {
         "name": "PoR",
-        "points": 0
+        "points": 8
       }
     ],
     "participants": [],
@@ -101,9 +101,9 @@
     "postend": "2021-02-22T00:00:00.000Z",
     "votestart": "2021-02-11T00:00:00.000Z",
     "voteend": "2021-02-25T00:00:00.000Z",
-    "lastupdate": null,
-    "stage": 0,
-    "winner": null
+    "lastupdate": "2021-03-02T12:06:35.371774Z",
+    "stage": 2,
+    "winner": "Binding Blade"
   },
   {
     "type": "Weekly Themes",
@@ -116,8 +116,8 @@
     "postend": "2021-02-08T00:00:00.000Z",
     "votestart": "2021-02-01T00:00:00.000Z",
     "voteend": "2021-02-11T00:00:00.000Z",
-    "lastupdate": "2021-02-07T13:57:17.904805Z",
-    "stage": 1,
+    "lastupdate": "2021-02-13T20:08:58.693222Z",
+    "stage": 2,
     "winner": null
   },
   {
